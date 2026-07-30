@@ -1,0 +1,27 @@
+region,year,period,indicator,value,unit,source
+France (metropolitan),2015-2024,summer seasons combined,ED visits for iCanicule (heatstroke/dehydration/hyponatremia),155000,count (>),Sante publique France - Donnees fortes chaleurs
+France (metropolitan),2015-2024,summer seasons combined,SOS Medecins consultations for iCanicule,33000,count (>),Sante publique France - Donnees fortes chaleurs
+France (metropolitan),2023,surveillance period Jun1-Sep15,ED visits for iCanicule,16361,count,Sante publique France - BEH 2025/11
+France (metropolitan),2023,surveillance period Jun1-Sep15,ED visit rate for iCanicule,24.4,per 100000 population,Sante publique France - BEH 2025/11
+France (metropolitan),2025,heatwave days only,ED visits for iCanicule,2646,count,Sante publique France - dispositif alerte canicule doc
+France (metropolitan),2025,heatwave days only,SOS Medecins consultations for iCanicule,1057,count,Sante publique France - dispositif alerte canicule doc
+France (metropolitan),2025,heatwave days only,ED visits for iCanicule as pct of total coded ED activity,0.8,percent,Sante publique France - dispositif alerte canicule doc
+France (metropolitan),2025,heatwave days only,SOS Medecins consultations as pct of total activity,1.3,percent,Sante publique France - dispositif alerte canicule doc
+France (metropolitan),2025,heatwave days only,heat-attributable deaths,1918,count,Sante publique France - dispositif alerte canicule doc
+France (metropolitan),2025,heatwave days only,heat-attributable deaths as pct of total mortality,12.4,percent,Sante publique France - dispositif alerte canicule doc
+Auvergne-Rhone-Alpes,2025,surveillance period Jun1-Sep15,ED visits for iCanicule,2784,count,Sante publique France - bilan ete 2025 ARA
+Auvergne-Rhone-Alpes,2025,surveillance period Jun1-Sep15,ED visits for iCanicule leading to hospitalization,1860,count,Sante publique France - bilan ete 2025 ARA
+Auvergne-Rhone-Alpes,2025,surveillance period Jun1-Sep15,SOS Medecins consultations for iCanicule,550,count,Sante publique France - bilan ete 2025 ARA
+Auvergne-Rhone-Alpes,2025,heatwave days only,ED visits for iCanicule,508,count,Sante publique France - bilan ete 2025 ARA
+Auvergne-Rhone-Alpes,2025,heatwave days only,ED visits for iCanicule as pct of total activity,0.8,percent,Sante publique France - bilan ete 2025 ARA
+Auvergne-Rhone-Alpes,2025,heatwave days only,ED visits followed by hospitalization,284,count,Sante publique France - bilan ete 2025 ARA
+Auvergne-Rhone-Alpes,2025,heatwave days only,ED visits followed by hospitalization as pct of ED visits,56,percent,Sante publique France - bilan ete 2025 ARA
+Auvergne-Rhone-Alpes,2025,heatwave days only,SOS Medecins acts for iCanicule,209,count,Sante publique France - bilan ete 2025 ARA
+Corse,2026,heatwave episode ending 2026-07-21,ED visits related to heat,34,count,Sante publique France - bulletin regional Corse 2026-07-21
+Corse,2026,heatwave episode ending 2026-07-21,ED visits for heat as pct of all-age ED visits,1.1,percent,Sante publique France - bulletin regional Corse 2026-07-21
+Corse,2026,heatwave episode ending 2026-07-21,ED visits for heat as pct of ED visits age 75+,3.0,percent,Sante publique France - bulletin regional Corse 2026-07-21
+Paca,2026 (partial year at time of report),full summer season,heat-attributable deaths,710,count (>),Sante publique France - bulletin regional Paca 2026-05-27
+Paca,2026 (partial year at time of report),full summer season,heat-attributable deaths as pct of all-cause mortality,5,percent (~),Sante publique France - bulletin regional Paca 2026-05-27
+Paca,2026 (partial year at time of report),during heatwave episodes only,heat-attributable deaths as pct of all-cause mortality during episodes,14,percent,Sante publique France - bulletin regional Paca 2026-05-27
+Ile-de-France,2026,surveillance period through 2026-07-15,note,see bulletin Figures 9-10 for daily iCanicule ED visit counts by department vigilance level,n/a,Sante publique France - bulletin IDF 2026-07-16
+Pays de la Loire,2026,heatwave episode 2026-06-19 to 2026-06-27,ED diagnosis coding completeness rate,85,percent,Sante publique France - bulletin regional PDL 2026-07-03

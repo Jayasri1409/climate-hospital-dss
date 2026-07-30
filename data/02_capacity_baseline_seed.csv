@@ -1,0 +1,7 @@
+country,year,indicator,value,unit,source
+Germany,2023,practising nurses (national total),1000000,count (~just over),Eurostat healthcare personnel statistics
+France,2023,practising nurses (national total),598915,count,Eurostat healthcare personnel statistics
+Italy,2023,practising nurses (national total),404497,count,Eurostat healthcare personnel statistics
+Spain,2023,practising nurses (national total),284232,count,Eurostat healthcare personnel statistics
+EU (all member states),2013-2023,hospital beds per 100000 inhabitants,see Eurostat hlth_rs_bds dataset for country-year detail,per 100000 population,Eurostat healthcare resource statistics - beds
+EU + partners,current,physicians/nurses/midwives/hospital staff indicators (~125 indicators),see WHO/Europe HlthRes-DB for full country-year detail,various,WHO Regional Office for Europe HlthRes-DB (joint with Eurostat/OECD)
