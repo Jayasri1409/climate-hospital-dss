@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climate-Aware Hospital Resource Planning DSS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F1F3EF;
+    --panel:#FFFFFF;
+    --ink:#1C2321;
+    --muted:#5B6560;
+    --line:#D9DED7;
+    --green:#3C8556;
+    --amber:#D9A030;
+    --orange:#D9752E;
+    --red:#C23B3B;
+    --teal:#1F6F78;
+    --teal-bg:#E4EFEF;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1.6;
+    font-size:16px;
+  }
+  h1,h2,h3{ font-family:'Space Grotesk', sans-serif; font-weight:500; letter-spacing:-0.01em;}
+  .mono{ font-family:'IBM Plex Mono', monospace; }
+  .wrap{ max-width:1040px; margin:0 auto; padding:0 24px; }
+
+  /* vigilance gradient bar - the signature element */
+  .vigilance-bar{
+    height:6px;
+    width:100%;
+    background:linear-gradient(90deg, var(--green) 0%, var(--green) 22%, var(--amber) 45%, var(--orange) 68%, var(--red) 100%);
+  }
+
+  header{ padding:96px 0 64px; }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:var(--teal);
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    margin-bottom:18px;
+  }
+  h1{ font-size:44px; max-width:760px; line-height:1.15; margin-bottom:20px;}
+  .thesis{ font-size:18px; color:var(--muted); max-width:600px; margin-bottom:36px; }
+
+  .vig-readout{
+    display:flex; align-items:center; gap:14px;
+    font-family:'IBM Plex Mono', monospace; font-size:13px; color:var(--muted);
+    margin-bottom:8px;
+  }
+  .vig-track{ position:relative; height:10px; flex:1; border-radius:6px; overflow:hidden;
+    background:linear-gradient(90deg, var(--green) 0%, var(--green) 22%, var(--amber) 45%, var(--orange) 68%, var(--red) 100%); }
+  .vig-marker{ position:absolute; top:-4px; width:2px; height:18px; background:var(--ink); left:45%; }
+
+  .cta-row{ display:flex; gap:12px; margin-top:32px; flex-wrap:wrap; }
+  .btn{
+    font-family:'IBM Plex Mono', monospace; font-size:14px;
+    padding:12px 20px; border-radius:4px; text-decoration:none;
+    display:inline-block; border:1px solid var(--ink);
+  }
+  .btn-primary{ background:var(--ink); color:var(--bg); }
+  .btn-secondary{ background:transparent; color:var(--ink); }
+
+  section{ padding:56px 0; border-top:1px solid var(--line); }
+  section h2{ font-size:26px; margin-bottom:8px; }
+  section .lede{ color:var(--muted); max-width:640px; margin-bottom:36px; }
+
+  .steps{ display:grid; grid-template-columns:repeat(4, 1fr); gap:16px; }
+  .step{ background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:20px; }
+  .step .num{ font-family:'IBM Plex Mono', monospace; color:var(--teal); font-size:13px; margin-bottom:10px; }
+  .step h3{ font-size:16px; margin-bottom:6px; }
+  .step p{ font-size:14px; color:var(--muted); }
+
+  .stat-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin-bottom:12px; }
+  .stat{ background:var(--teal-bg); border-radius:8px; padding:20px; }
+  .stat .num{ font-family:'Space Grotesk', sans-serif; font-size:32px; font-weight:500; color:var(--teal); }
+  .stat .label{ font-size:13px; color:var(--muted); margin-top:6px; }
+  .stat .src{ font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--muted); margin-top:10px; }
+
+  .source-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; }
+  .source{ border:1px solid var(--line); border-radius:8px; padding:18px; background:var(--panel); }
+  .source h3{ font-size:15px; margin-bottom:6px; }
+  .source p{ font-size:13px; color:var(--muted); }
+  .source a{ font-size:13px; color:var(--teal); }
+
+  .demo-panel{
+    background:var(--ink); color:var(--bg); border-radius:10px; padding:40px;
+    display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:wrap;
+  }
+  .demo-panel h2{ color:var(--bg); }
+  .demo-panel p{ color:#B9C2BB; font-size:14px; max-width:420px; }
+  .demo-panel .btn-primary{ background:var(--bg); color:var(--ink); border-color:var(--bg); }
+
+  footer{ padding:40px 0 80px; color:var(--muted); font-size:13px; }
+  footer a{ color:var(--teal); }
+
+  @media (max-width:820px){
+    .steps, .stat-grid, .source-grid{ grid-template-columns:1fr; }
+    h1{ font-size:32px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="vigilance-bar"></div>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Decision support system — climate + healthcare</p>
+    <h1>Climate-aware hospital resource planning</h1>
+    <p class="thesis">
+      A decision support system that turns expected heatwave conditions into a concrete answer:
+      how many extra nurses, doctors, and beds should a hospital prepare — before demand arrives.
+    </p>
+
+    <div class="vig-readout">
+      <span>MÉTÉO-FRANCE VIGILANCE SCALE</span>
+      <div class="vig-track"><div class="vig-marker"></div></div>
+      <span>GREEN — RED</span>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#demo">View live dashboard</a>
+      <a class="btn btn-secondary" href="https://github.com/mjs/climate-hospital-dss" target="_blank">View source on GitHub</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>The problem</h2>
+    <p class="lede">
+      Extreme heat measurably increases emergency department demand, but hospitals largely react
+      after the surge hits rather than preparing for it. This project builds the data-driven bridge
+      between a climate forecast and a staffing decision.
+    </p>
+    <div class="stat-grid">
+      <div class="stat">
+        <div class="num">16,361</div>
+        <div class="label">ED visits linked to heat, France, 2023 season</div>
+        <div class="src">Santé publique France, BEH 2025/11</div>
+      </div>
+      <div class="stat">
+        <div class="num">1,918</div>
+        <div class="label">heat-attributable deaths during 2025 heatwave days</div>
+        <div class="src">Santé publique France, dispositif d'alerte canicule</div>
+      </div>
+      <div class="stat">
+        <div class="num">117</div>
+        <div class="label">real region-year data points, 13 regions × 2016–2024, used to train the demand model</div>
+        <div class="src">Santé publique France + Eurostat, cleaned &amp; merged</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <p class="lede">Four stages, from raw climate signal to a hospital-level recommendation.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="num">01 / CLIMATE</div>
+        <h3>Heat exposure</h3>
+        <p>Daily temperature, heatwave days and severity by region (Météo-France, Copernicus).</p>
+      </div>
+      <div class="step">
+        <div class="num">02 / DEMAND</div>
+        <h3>ED demand model</h3>
+        <p>Historical heat-to-ED-visit relationship (SurSaUD/OSCOUR iCanicule indicator).</p>
+      </div>
+      <div class="step">
+        <div class="num">03 / CAPACITY</div>
+        <h3>Resource gap</h3>
+        <p>Expected demand compared against baseline nurse, doctor and bed capacity (Eurostat).</p>
+      </div>
+      <div class="step">
+        <div class="num">04 / DECISION</div>
+        <h3>Recommendation</h3>
+        <p>A plain-language staffing and bed recommendation for the administrator.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo">
+    <div class="demo-panel">
+      <div>
+        <h2>Live dashboard</h2>
+        <p>Explore real 2016–2024 region-years, or run your own what-if heatwave scenario through the trained model to see the resulting risk tier and capacity recommendation.</p>
+      </div>
+      <a class="btn btn-primary" href="https://streamlit.io/cloud" target="_blank">Open dashboard →</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Data sources</h2>
+    <p class="lede">Every figure in this project traces back to a named, public source.</p>
+    <div class="source-grid">
+      <div class="source">
+        <h3>Santé publique France</h3>
+        <p>SurSaUD/OSCOUR ED surveillance, iCanicule indicator, national and regional bulletins.</p>
+        <a href="https://odisse.santepubliquefrance.fr/explore/" target="_blank">odisse.santepubliquefrance.fr →</a>
+      </div>
+      <div class="source">
+        <h3>Eurostat</h3>
+        <p>Healthcare personnel and hospital bed statistics by country and NUTS2 region.</p>
+        <a href="https://ec.europa.eu/eurostat/databrowser" target="_blank">ec.europa.eu/eurostat →</a>
+      </div>
+      <div class="source">
+        <h3>Copernicus / Météo-France</h3>
+        <p>ERA5 reanalysis and national station data for temperature and humidity.</p>
+        <a href="https://cds.climate.copernicus.eu" target="_blank">cds.climate.copernicus.eu →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Student capstone project — Climate-Aware Hospital Resource Planning Decision Support System.
+    Code and data pipeline on <a href="https://github.com/mjs/climate-hospital-dss" target="_blank">GitHub</a>.
+    Dashboard built with Streamlit.</p>
+  </footer>
+</div>
+
+</body>
+</html>
