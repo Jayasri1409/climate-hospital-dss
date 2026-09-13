@@ -8,22 +8,22 @@ st.set_page_config(page_title="Live Forecast", page_icon="📡", layout="wide")
 st.title("Live 7-Day Forecast")
 st.caption("Real weather forecast (Open-Meteo), run through the validated lag-effect model")
 
-thresholds = pd.read_csv("data/dept_heatwave_thresholds.csv")
-dept_options = thresholds["dep_name"].tolist() if "dep_name" in thresholds.columns else thresholds.iloc[:, 0].tolist()
+thresholds = pd.read_csv("data/dept_heatwave_thresholds.csv", dtype={"dep": str})
 
-department = st.selectbox("Department", sorted(dept_options))
+department_name = st.selectbox("Department", sorted(thresholds["dep_name"].tolist()))
 
 if st.button("Get live forecast"):
     try:
         from live_forecast import get_live_dss_forecast
 
-        row = thresholds[thresholds.iloc[:, 0] == department]
-        p90 = float(row.iloc[0]["p90_tmax"]) if not row.empty else 28.0
+        row = thresholds[thresholds["dep_name"] == department_name]
+        dep_code = row.iloc[0]["dep"]
+        p90 = float(row.iloc[0]["p90_tmax"])
 
         with st.spinner("Fetching real weather forecast..."):
-            result = get_live_dss_forecast(department, dept_p90_threshold=p90)
+            result = get_live_dss_forecast(dep_code, dept_p90_threshold=p90)
 
-        st.success(f"Live forecast retrieved for {department}")
+        st.success(f"Live forecast retrieved for {department_name} (dept {dep_code})")
         preds = pd.DataFrame(result["daily_predictions"])
         st.dataframe(preds, use_container_width=True)
 
@@ -37,5 +37,7 @@ if st.button("Get live forecast"):
 
 st.caption(
     "Uses Open-Meteo (free, no API key) for real forecast data, and the validated "
-    "event-study lag model from the Heat Analysis page — not simulated data."
+    "event-study lag model from the Heat Analysis page — not simulated data. "
+    "Coordinates come from each department's prefecture city (fixed lookup table), "
+    "not live name-based geocoding, since department names were failing to resolve."
 )
