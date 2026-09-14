@@ -24,6 +24,17 @@ st.info(
     "heat-health relationship documented in Flower et al. (2026, BMJ Open)."
 )
 
+st.subheader("Enhancement: Compound Heat (hot day + warm night)")
+st.caption("Adding TMin (overnight temperature) — 'tropical nights' prevent recovery and are a known stronger risk factor")
+compound = pd.read_csv("data/compound_heat_summary.csv")
+st.dataframe(compound, use_container_width=True)
+st.bar_chart(compound.set_index("signal")["mean_pct_deviation"])
+st.success(
+    "Compound heat (+2.33%) is the STRONGEST validated signal in this project — stronger than "
+    "hot-day-alone (+1.84%) or warm-night-alone (+1.79%). This directly supports using compound "
+    "heat, not simple daytime temperature, as the primary daily risk flag (see Hospital DSS page)."
+)
+
 st.subheader("Example: Paris, Summer 2022")
 try:
     sample = pd.read_csv("data/sample_daily_series_paris_2022.csv", parse_dates=["Date"])
