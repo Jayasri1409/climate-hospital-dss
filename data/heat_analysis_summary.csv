@@ -1,6 +1,0 @@
-period,mean_pct_deviation,n,p_value
-Same day (heatwave day),1.43,20600,1.354059423503888e-94
-Normal day (baseline),-0.44,66610,
-Day +1 after heatwave,2.0,20591,
-Day +2 after heatwave,1.81,20589,
-Day +3 after heatwave,1.82,20576,
