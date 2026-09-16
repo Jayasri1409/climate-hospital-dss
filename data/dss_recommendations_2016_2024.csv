@@ -1,0 +1,118 @@
+region,year,predicted_attrib_deaths_heatwave_pct,risk_tier,recommended_capacity_increase_pct,baseline_beds,extra_beds_recommended,note
+Auvergne et Rhône-Alpes,2016,8.765,Moderate,10.0,48869.0,4887,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Auvergne et Rhône-Alpes,2017,9.535,Moderate,10.0,48224.0,4822,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Auvergne et Rhône-Alpes,2018,9.64,Moderate,10.0,47791.0,4779,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Auvergne et Rhône-Alpes,2019,10.286,Moderate,10.0,47576.0,4758,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Auvergne et Rhône-Alpes,2020,9.634,Moderate,10.0,46860.0,4686,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Auvergne et Rhône-Alpes,2021,8.022,Moderate,10.0,46053.0,4605,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Auvergne et Rhône-Alpes,2022,10.146,Moderate,10.0,44962.0,4496,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Auvergne et Rhône-Alpes,2023,10.261,Moderate,10.0,44102.0,4410,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Auvergne et Rhône-Alpes,2024,9.463,Moderate,10.0,44231.0,4423,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bourgogne et Franche-Comté,2016,10.133,Moderate,10.0,18455.0,1846,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bourgogne et Franche-Comté,2017,10.287,Moderate,10.0,18170.0,1817,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bourgogne et Franche-Comté,2018,10.95,Moderate,10.0,17857.0,1786,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bourgogne et Franche-Comté,2019,11.634,High,20.0,17862.0,3572,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bourgogne et Franche-Comté,2020,10.913,Moderate,10.0,17457.0,1746,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bourgogne et Franche-Comté,2021,0.0,Low,0.0,17058.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bourgogne et Franche-Comté,2022,10.601,Moderate,10.0,16611.0,1661,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bourgogne et Franche-Comté,2023,10.859,Moderate,10.0,16265.0,1626,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bourgogne et Franche-Comté,2024,9.357,Moderate,10.0,16206.0,1621,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bretagne,2016,9.619,Moderate,10.0,20580.0,2058,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bretagne,2017,9.381,Moderate,10.0,20374.0,2037,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bretagne,2018,0.0,Low,0.0,20043.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bretagne,2019,10.633,Moderate,10.0,19790.0,1979,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bretagne,2020,0.0,Low,0.0,19785.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bretagne,2021,0.0,Low,0.0,19534.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bretagne,2022,10.909,Moderate,10.0,19198.0,1920,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bretagne,2023,9.66,Moderate,10.0,18934.0,1893,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Bretagne,2024,0.0,Low,0.0,18812.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Centre-Val de Loire,2016,9.545,Moderate,10.0,16143.0,1614,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Centre-Val de Loire,2017,10.522,Moderate,10.0,15827.0,1583,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Centre-Val de Loire,2018,9.448,Moderate,10.0,15594.0,1559,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Centre-Val de Loire,2019,12.229,High,20.0,15338.0,3068,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Centre-Val de Loire,2020,10.869,Moderate,10.0,15283.0,1528,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Centre-Val de Loire,2021,0.0,Low,0.0,15141.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Centre-Val de Loire,2022,9.714,Moderate,10.0,14825.0,1482,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Centre-Val de Loire,2023,9.429,Moderate,10.0,14558.0,1456,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Centre-Val de Loire,2024,8.571,Moderate,10.0,14355.0,1436,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Corse,2016,0.0,Low,0.0,2027.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Corse,2017,13.112,Severe,35.0,2060.0,721,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Corse,2018,13.918,Severe,35.0,2050.0,718,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Corse,2019,10.619,Moderate,10.0,2052.0,205,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Corse,2020,0.0,Low,0.0,2031.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Corse,2021,0.0,Low,0.0,2032.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Corse,2022,14.342,Severe,35.0,2025.0,709,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Corse,2023,12.342,High,20.0,1949.0,390,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Corse,2024,17.756,Severe,35.0,1990.0,696,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Grand Est,2016,8.431,Moderate,10.0,34416.0,3442,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Grand Est,2017,8.838,Moderate,10.0,33763.0,3376,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Grand Est,2018,10.704,Moderate,10.0,33350.0,3335,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Grand Est,2019,10.923,Moderate,10.0,32905.0,3290,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Grand Est,2020,10.736,Moderate,10.0,32177.0,3218,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Grand Est,2021,9.029,Moderate,10.0,31674.0,3167,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Grand Est,2022,8.831,Moderate,10.0,31169.0,3117,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Grand Est,2023,10.081,Moderate,10.0,30386.0,3039,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Grand Est,2024,0.0,Low,0.0,30181.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Hauts-de-France,2016,8.857,Moderate,10.0,36180.0,3618,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Hauts-de-France,2017,9.289,Moderate,10.0,35772.0,3577,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Hauts-de-France,2018,10.578,Moderate,10.0,35336.0,3534,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Hauts-de-France,2019,10.912,Moderate,10.0,35002.0,3500,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Hauts-de-France,2020,13.265,Severe,35.0,34346.0,12021,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Hauts-de-France,2021,0.0,Low,0.0,34258.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Hauts-de-France,2022,10.378,Moderate,10.0,33903.0,3390,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Hauts-de-France,2023,10.031,Moderate,10.0,33388.0,3339,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Hauts-de-France,2024,0.0,Low,0.0,33104.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Normandie,2016,0.0,Low,0.0,19673.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Normandie,2017,8.736,Moderate,10.0,19532.0,1953,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Normandie,2018,0.0,Low,0.0,19446.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Normandie,2019,10.725,Moderate,10.0,19239.0,1924,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Normandie,2020,10.927,Moderate,10.0,19137.0,1914,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Normandie,2021,0.0,Low,0.0,18993.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Normandie,2022,10.702,Moderate,10.0,18682.0,1868,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Normandie,2023,9.652,Moderate,10.0,18443.0,1844,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Normandie,2024,0.0,Low,0.0,18246.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Nouvelle Aquitaine,2016,8.811,Moderate,10.0,38007.0,3801,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Nouvelle Aquitaine,2017,9.03,Moderate,10.0,37521.0,3752,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Nouvelle Aquitaine,2018,10.213,Moderate,10.0,36854.0,3685,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Nouvelle Aquitaine,2019,10.932,Moderate,10.0,36501.0,3650,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Nouvelle Aquitaine,2020,10.544,Moderate,10.0,36363.0,3636,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Nouvelle Aquitaine,2021,0.0,Low,0.0,35666.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Nouvelle Aquitaine,2022,10.931,Moderate,10.0,35258.0,3526,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Nouvelle Aquitaine,2023,10.932,Moderate,10.0,34766.0,3477,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Nouvelle Aquitaine,2024,9.413,Moderate,10.0,34251.0,3425,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Occitanie,2016,4.897,Low,0.0,37924.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Occitanie,2017,8.856,Moderate,10.0,37822.0,3782,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Occitanie,2018,10.702,Moderate,10.0,37503.0,3750,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Occitanie,2019,10.923,Moderate,10.0,37400.0,3740,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Occitanie,2020,10.577,Moderate,10.0,37295.0,3730,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Occitanie,2021,8.719,Moderate,10.0,37061.0,3706,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Occitanie,2022,11.08,Moderate,10.0,36652.0,3665,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Occitanie,2023,10.971,Moderate,10.0,36547.0,3655,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Occitanie,2024,10.212,Moderate,10.0,36469.0,3647,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Pays de la Loire,2016,8.702,Moderate,10.0,19831.0,1983,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Pays de la Loire,2017,9.183,Moderate,10.0,19430.0,1943,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Pays de la Loire,2018,9.101,Moderate,10.0,19220.0,1922,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Pays de la Loire,2019,10.899,Moderate,10.0,19047.0,1905,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Pays de la Loire,2020,10.629,Moderate,10.0,18729.0,1873,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Pays de la Loire,2021,0.0,Low,0.0,18570.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Pays de la Loire,2022,10.923,Moderate,10.0,18312.0,1831,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Pays de la Loire,2023,9.645,Moderate,10.0,17812.0,1781,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Pays de la Loire,2024,9.813,Moderate,10.0,17706.0,1771,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Provence-Alpes-Côte d'Azur,2016,0.0,Low,0.0,35448.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Provence-Alpes-Côte d'Azur,2017,10.75,Moderate,10.0,35310.0,3531,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Provence-Alpes-Côte d'Azur,2018,10.923,Moderate,10.0,35479.0,3548,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Provence-Alpes-Côte d'Azur,2019,10.932,Moderate,10.0,34915.0,3492,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Provence-Alpes-Côte d'Azur,2020,8.789,Moderate,10.0,34214.0,3421,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Provence-Alpes-Côte d'Azur,2021,8.877,Moderate,10.0,33980.0,3398,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Provence-Alpes-Côte d'Azur,2022,10.914,Moderate,10.0,33242.0,3324,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Provence-Alpes-Côte d'Azur,2023,10.923,Moderate,10.0,33099.0,3310,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Provence-Alpes-Côte d'Azur,2024,10.693,Moderate,10.0,32926.0,3293,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Île-de-France,2016,9.217,Moderate,10.0,67144.0,6714,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Île-de-France,2017,9.206,Moderate,10.0,66703.0,6670,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Île-de-France,2018,9.445,Moderate,10.0,65850.0,6585,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Île-de-France,2019,10.403,Moderate,10.0,64045.0,6404,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Île-de-France,2020,11.25,Moderate,10.0,63350.0,6335,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Île-de-France,2021,0.0,Low,0.0,61420.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Île-de-France,2022,9.365,Moderate,10.0,59804.0,5980,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Île-de-France,2023,9.206,Moderate,10.0,59930.0,5993,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
+Île-de-France,2024,0.0,Low,0.0,59281.0,0,Staffing recommendation uses the same % increase as beds (no regional nurse/doctor dataset exists at this granularity — documented assumption).
