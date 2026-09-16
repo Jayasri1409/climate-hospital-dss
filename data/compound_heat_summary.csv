@@ -1,4 +1,0 @@
-signal,mean_pct_deviation,n,p_value,notes
-Hot day alone (TMax only),1.84,2816,0.00000,Day-of-week adjusted
-Warm night alone (TMin only),1.79,2797,0.00000,Day-of-week adjusted
-Compound heat (hot day + warm night),2.33,1517,0.00000,Strongest signal found - day-of-week adjusted
