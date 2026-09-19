@@ -1,4 +1,5 @@
 import sys, os
+from pathlib import Path
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src"))
 
 import streamlit as st
@@ -82,37 +83,88 @@ with tab3:
     )
 
     if st.button("Run daily scenario"):
-        scenario = simulate_forward_scenario(region, clim, pd.Timestamp(start_date), n_days=n_days)
-        total_beds = panel[panel["region"] == region].sort_values("year")["hospital_beds"].dropna().iloc[-1]
-        cap = simulate_daily_capacity(region, pd.to_datetime(scenario["date"]), total_beds,
-                                       is_compound_heat=scenario["is_compound_heat_day"].values)
-        combined = scenario.merge(
-            cap[["date", "simulated_occupancy_pct", "simulated_available_beds",
-                 "recommended_extra_beds", "recommended_extra_nurses", "recommended_extra_doctors"]],
-            on="date")
+    # Run the weather scenario
+    scenario = simulate_forward_scenario(
+        region,
+        clim,
+        pd.Timestamp(start_date),
+        n_days=n_days
+    )
 
-        n_compound = int(combined["is_compound_heat_day"].sum())
-        total_extra_beds = int(combined["recommended_extra_beds"].sum())
-        total_extra_nurses = int(combined["recommended_extra_nurses"].sum())
-        total_extra_doctors = int(combined["recommended_extra_doctors"].sum())
+    # Get hospital bed count
+    total_beds = (
+        panel[panel["region"] == region]
+        .sort_values("year")["hospital_beds"]
+        .dropna()
+        .iloc[-1]
+    )
 
-        st.subheader("Recommendation")
-        c1, c2, c3, c4 = st.columns(4)
-        c1.metric("Compound heat days", f"{n_compound} / {n_days}")
-        c2.metric("Extra beds recommended", f"{total_extra_beds:,}")
-        c3.metric("Extra nurses recommended", f"{total_extra_nurses:,}")
-        c4.metric("Extra doctors recommended", f"{total_extra_doctors:,}")
+    # Simulate hospital capacity
+    cap = simulate_daily_capacity(
+        region,
+        pd.to_datetime(scenario["date"]),
+        total_beds,
+        is_compound_heat=scenario["is_compound_heat_day"].values
+    )
 
-        if n_compound > 0:
-            st.warning(
-                f"On the {n_compound} compound heat day(s) in this scenario, recommend preparing "
-                f"approximately **{total_extra_beds} extra beds, {total_extra_nurses} extra nurses, "
-                f"and {total_extra_doctors} extra doctors**, based on the validated +2.33% ED demand "
-                f"signal (p<0.00001, real 2018-2023 data). Staffing ratios (nurses/doctors per bed) "
-                f"are a documented assumption — no public daily staffing dataset exists for France."
-            )
-        else:
-            st.success("No compound heat days in this scenario — no additional capacity recommended.")
+    # Load the prepared regional ED visits data
+    project_dir = Path(__file__).resolve().parent.parent
+    ed_path = project_dir / "data" / "regional_daily_ed_visits.csv"
 
-        st.subheader("Day-by-day detail")
-        st.dataframe(combined, use_container_width=True)
+    ed = pd.read_csv(ed_path)
+    ed["date"] = pd.to_datetime(ed["date"], errors="coerce")
+    ed["region"] = ed["region"].astype(str).str.strip()
+
+    # Keep ED visits for the selected region
+    ed_region = ed[ed["region"] == region].copy()
+
+    # Merge weather, capacity, and ED visits
+    combined = scenario.merge(
+        cap[
+            [
+                "date",
+                "simulated_occupancy_pct",
+                "simulated_available_beds",
+                "recommended_extra_beds",
+                "recommended_extra_nurses",
+                "recommended_extra_doctors"
+            ]
+        ],
+        on="date",
+        how="left"
+    )
+
+    combined["date"] = pd.to_datetime(combined["date"], errors="coerce")
+
+    combined = combined.merge(
+        ed_region[["date", "daily_ed_visits"]],
+        on="date",
+        how="left"
+    )
+
+    # Display the recommendations
+    n_compound = int(combined["is_compound_heat_day"].sum())
+    total_extra_beds = int(combined["recommended_extra_beds"].sum())
+    total_extra_nurses = int(combined["recommended_extra_nurses"].sum())
+    total_extra_doctors = int(combined["recommended_extra_doctors"].sum())
+
+    st.subheader("Recommendation")
+
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Compound heat days", f"{n_compound} / {n_days}")
+    c2.metric("Extra beds recommended", f"{total_extra_beds:,}")
+    c3.metric("Extra nurses recommended", f"{total_extra_nurses:,}")
+    c4.metric("Extra doctors recommended", f"{total_extra_doctors:,}")
+
+    if combined["daily_ed_visits"].notna().any():
+        st.metric(
+            "Average daily ED visits",
+            f"{combined['daily_ed_visits'].mean():,.1f}"
+        )
+    else:
+        st.warning(
+            "No matching ED visit records found for this region and forecast dates."
+        )
+
+    st.subheader("Day-by-day detail")
+    st.dataframe(combined, use_container_width=True)
